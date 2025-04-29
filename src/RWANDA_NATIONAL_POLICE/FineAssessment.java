@@ -1,6 +1,5 @@
 package RWANDA_NATIONAL_POLICE;
 
-// FineAssessment class
 public class FineAssessment extends TrafficRecord {
     public FineAssessment(String driverId, String driverName, String vehiclePlate, String violationType) {
         this.driverId = driverId;
@@ -34,11 +33,11 @@ public class FineAssessment extends TrafficRecord {
 
     @Override
     public void recordViolation() {
-        // Not applicable for FineAssessment
+       
     }
 
     @Override
     public void processPayment() {
-        // Not applicable for FineAssessment
+        
     }
 }
