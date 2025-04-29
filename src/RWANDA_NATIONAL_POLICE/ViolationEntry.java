@@ -1,4 +1,4 @@
-package RWANDA_NATIONAL_POLICE;
+ package RWANDA_NATIONAL_POLICE;
 
 import java.util.Scanner;
 
