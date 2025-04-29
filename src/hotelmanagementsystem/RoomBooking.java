@@ -1,5 +1,4 @@
 package hotelmanagementsystem;
-// RoomBooking class
 public class RoomBooking extends HotelService {
     public RoomBooking(String guestId, String guestName, String roomType, int stayDays) {
         super(guestId, guestName, roomType, stayDays);
@@ -21,11 +20,11 @@ public class RoomBooking extends HotelService {
 
     @Override
     public void checkoutGuest() {
-        // Not applicable for RoomBooking
+       
     }
 
     @Override
     public void generateBill() {
-        // Not applicable for RoomBooking
+        
     }
 }
