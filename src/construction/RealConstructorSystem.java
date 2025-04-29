@@ -6,7 +6,7 @@ public class RealConstructorSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Validate Contractor ID: Digits only
+       
         String id;
         while (true) {
             System.out.print("Enter Contractor ID: ");
@@ -18,7 +18,7 @@ public class RealConstructorSystem {
             }
         }
 
-        // Validate Contractor Name: Only letters and spaces
+       
         String name;
         while (true) {
             System.out.print("Enter Contractor Name: ");
@@ -30,7 +30,7 @@ public class RealConstructorSystem {
             }
         }
 
-        // Validate Material Quantity: Must be a positive double
+        
         double quantity;
         while (true) {
             System.out.print("Enter Material Quantity (in tons): ");
@@ -44,7 +44,7 @@ public class RealConstructorSystem {
             }
         }
 
-        // Validate Material Balance: Must be a non-negative double
+        
         double balance;
         while (true) {
             System.out.print("Enter Current Material Balance (in tons): ");
@@ -58,7 +58,7 @@ public class RealConstructorSystem {
             }
         }
 
-        // Menu for Operation Choice
+        
         System.out.println("\nChoose Operation:");
         System.out.println("1. Material Delivery");
         System.out.println("2. Material Usage");
