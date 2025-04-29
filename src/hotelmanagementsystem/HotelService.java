@@ -1,5 +1,5 @@
 package hotelmanagementsystem;
-// Abstract class
+
 public abstract class HotelService {
     protected String guestId;
     protected String guestName;
@@ -12,7 +12,7 @@ public abstract class HotelService {
         this.guestName = guestName;
         this.roomType = roomType;
         this.stayDays = stayDays;
-        this.roomStatus = "AVAILABLE"; // Default status
+        this.roomStatus = "AVAILABLE"; 
     }
 
     public abstract void bookRoom();
