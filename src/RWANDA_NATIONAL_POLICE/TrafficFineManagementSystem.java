@@ -2,7 +2,7 @@ package RWANDA_NATIONAL_POLICE;
 
 import java.util.Scanner;
 
-// Main class
+
 public class TrafficFineManagementSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -11,12 +11,12 @@ public class TrafficFineManagementSystem {
         String vehiclePlate = "";
         String violationType = "";
 
-        // Input for violation entry
+       
         while (true) {
-            System.out.print("Enter Driver ID: "); // Updated prompt
+            System.out.print("Enter Driver ID: "); 
             driverId = scanner.nextLine().trim();
-            if (driverId.matches("\\d{16}")) { // Check if input is exactly 16 digits
-                break; // Valid input
+            if (driverId.matches("\\d{16}")) { 
+                break; 
             } else {
                 System.out.println("Error: Driver ID must be exactly 16 digits long.");
             }
@@ -31,15 +31,15 @@ public class TrafficFineManagementSystem {
         System.out.print("Enter Violation Type (SPEEDING, RED_LIGHT, NO_HELMET, DUI): ");
         violationType = scanner.nextLine().trim();
 
-        // Create ViolationEntry
+     
         ViolationEntry violationEntry = new ViolationEntry(driverId, driverName, vehiclePlate, violationType);
         violationEntry.recordViolation();
 
-        // Create FineAssessment
+       
         FineAssessment fineAssessment = new FineAssessment(driverId, driverName, vehiclePlate, violationType);
         fineAssessment.assessFine();
 
-        // Process payment
+       
         FinePayment finePayment = new FinePayment(driverId, driverName, vehiclePlate, violationType, fineAssessment.fineAmount);
         finePayment.processPayment();
 
