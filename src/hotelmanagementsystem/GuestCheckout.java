@@ -1,6 +1,5 @@
 package hotelmanagementsystem;
 
-// GuestCheckout class
 public class GuestCheckout extends HotelService {
     public GuestCheckout(String guestId, String guestName, String roomType, int stayDays) {
         super(guestId, guestName, roomType, stayDays);
@@ -18,11 +17,11 @@ public class GuestCheckout extends HotelService {
 
     @Override
     public void bookRoom() {
-        // Not applicable for GuestCheckout
+
     }
 
     @Override
     public void generateBill() {
-        // Not applicable for GuestCheckout
+       
     }
 }
